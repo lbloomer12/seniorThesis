@@ -1,0 +1,10 @@
+# Xcode
+*.xcuserstate
+xcuserdata/
+
+# Editor and tooling
+.vscode/
+buildServer.json
+
+# Mac Stuff
+.DS_Store
