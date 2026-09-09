@@ -8,3 +8,6 @@ buildServer.json
 
 # Mac Stuff
 .DS_Store
+
+# Firestore Stuff
+GoogleService-Info.plist
