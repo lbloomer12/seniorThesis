@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9E5960B23051E3A400C5FDFD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9E5960B13051E3A400C5FDFD /* FirebaseFirestore */; };
 		9E5960B43051E3AD00C5FDFD /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9E5960B33051E3AD00C5FDFD /* FirebaseCore */; };
+		9E5960C13051E3AD00C5FDFD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9E5960C33051E3AD00C5FDFD /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			files = (
 				9E5960B43051E3AD00C5FDFD /* FirebaseCore in Frameworks */,
 				9E5960B23051E3A400C5FDFD /* FirebaseFirestore in Frameworks */,
+				9E5960C13051E3AD00C5FDFD /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +84,7 @@
 			packageProductDependencies = (
 				9E5960B13051E3A400C5FDFD /* FirebaseFirestore */,
 				9E5960B33051E3AD00C5FDFD /* FirebaseCore */,
+				9E5960C33051E3AD00C5FDFD /* FirebaseAuth */,
 			);
 			productName = ShotTracker;
 			productReference = 9E16A7FB30476E3000E493D7 /* ShotTracker.app */;
@@ -290,13 +293,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.5;
 			};
 			name = Debug;
@@ -332,13 +336,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.5;
 			};
 			name = Release;
@@ -387,6 +392,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9E5960A33051E08900C5FDFD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCore;
+		};
+		9E5960C33051E3AD00C5FDFD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E5960A33051E08900C5FDFD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
